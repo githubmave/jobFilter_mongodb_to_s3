@@ -28,10 +28,10 @@ Add your connection string into your application code.
 
 
 
-## 1. Configure IP Access List Entries (This method should set static ip address for AWS Lambda.)
+#### 1. Configure IP Access List Entries (This method should set static ip address for AWS Lambda.)
 
 
-## 2. Set up a Network Peering Connection (This method is not available for M0 free clusters, M2, and M5 clusters.) 3. Set up a Private Endpoint (This method is not available for M0 free clusters, M2, and M5 clusters.)
+####  2. Set up a Network Peering Connection (This method is not available for M0 free clusters, M2, and M5 clusters.) 3. Set up a Private Endpoint (This method is not available for M0 free clusters, M2, and M5 clusters.)
 
 
 
