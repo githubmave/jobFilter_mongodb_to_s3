@@ -10,7 +10,7 @@ this repo managed by data engineer team
 Works divided into datapipeline, tags and trigger
 
 
-Prerequisite
+## Prerequisite
 
 
 Install and deploy all requirements packages that not provide by AWS Lambda: pymongo, bason, dotenv.
@@ -24,19 +24,19 @@ Add your connection string into your application code.
 
 
 
-2. Network Access: 
+## 2. Network Access: 
 
 
 
-1. Configure IP Access List Entries (This method should set static ip address for AWS Lambda.)
+## 1. Configure IP Access List Entries (This method should set static ip address for AWS Lambda.)
 
 
-2. Set up a Network Peering Connection (This method is not available for M0 free clusters, M2, and M5 clusters.) 3. Set up a Private Endpoint (This method is not available for M0 free clusters, M2, and M5 clusters.)
+## 2. Set up a Network Peering Connection (This method is not available for M0 free clusters, M2, and M5 clusters.) 3. Set up a Private Endpoint (This method is not available for M0 free clusters, M2, and M5 clusters.)
 
 
 
 
-Main Process
+## Main Process
 
 
 
@@ -50,7 +50,7 @@ Use boto3 Python SDK to connect AWS S3 bucket.
 
 Load data objects into target AWS S3 bucket.
 
-Files:
+## Files:
 
 src folder contains main execution scripts. * src/mongodb_to_s3.py is where execute AWS Lambda handler method.
 core folder contains all defined functions. * core/extract.py is where get collection object from MongoDB. * core/filter.py is where pre-clean collection for filtering necessary data. * core/load.py is where load data to S3 Bucket.
